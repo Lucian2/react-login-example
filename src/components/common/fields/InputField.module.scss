@@ -1,0 +1,22 @@
+.inputField {
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  &:focus {
+    box-shadow: none;
+  }
+  &::placeholder {
+    color: #999999;
+  }
+  &:-webkit-autofill {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #ffffff;
+  }
+}
+
+.svg {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}

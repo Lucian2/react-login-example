@@ -1,0 +1,35 @@
+.loginCtn {
+  position: relative;
+  background-color: #27262c;
+  color: #ffffff;
+  font-family: 'Playwrite DE Grund', cursive;
+  user-select: none;
+  .form {
+    width: 25%;
+    @media screen and (max-width: 850px) {
+      width: 50%;
+    }
+  }
+  img {
+    &:nth-of-type(1) {
+      bottom: -10%;
+      right: -5%;
+    }
+    &:nth-of-type(2) {
+      height: 75%;
+    }
+    &.ellipse2 {
+      z-index: 2;
+      top: 20%;
+      left: 6%;
+    }
+    &:nth-of-type(2n) {
+      @media screen and (max-width: 1100px) {
+        height: 40%;
+      }
+      @media screen and (max-width: 800px) {
+        height: 20%;
+      }
+    }
+  }
+}
